@@ -1,0 +1,15 @@
+logging:
+  #日志存储地址
+  file: "logs/config/bat.log"
+info:
+  name : "springboot项目"
+
+server:
+  #端口号
+  port: 8888
+  #项目名，如果不设定，默认是 
+  context-path: /bat
+#mvc:
+#  view:
+#   prefix: /
+#   suffix: .jsp

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//月末
+function MonEnd(qdate2)
+{
+	
+	alert('aa');
+	cdate = qdate2.split("-");
+    var myDate1 = cdate[1]+"/"+cdate[2]+"/"+cdate[0];
+	var myDate = new Date(myDate1);
+    var year = myDate.getFullYear();
+    var month = myDate.getMonth()+1;
+    if (month<10){
+        month = "0"+month;
+    }
+	myDate = new Date(year,month,0);
+    var lastDay = year+"-"+month+"-"+myDate.getDate();
+    alert(lastDay);
+	//return lastDay;
+}
+
+</script>
+</head>
+<body  onload="MonEnd('2018-12-01')">
+
+</body>
+</html>
